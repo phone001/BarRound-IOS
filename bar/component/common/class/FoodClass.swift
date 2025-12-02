@@ -6,12 +6,12 @@
 //
 import Foundation
 class FoodClass : ProductProps{
-    var id : UUID ;
+    var id : Int ;
     var name : String ;
     var price : Int;
     var image : String;
-    init(_name:String,_price:Int,_image:String){
-        self.id = UUID();
+    init(_id:Int,_name:String,_price:Int,_image:String){
+        self.id = _id;
         self.name = _name;
         self.price = _price;
         self.image = _image;

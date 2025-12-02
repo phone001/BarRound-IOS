@@ -6,7 +6,7 @@
 //
 import SwiftUI
 protocol MenuProps:Identifiable{
-    var id:UUID {get}
+    var id:UUID{get};
     var menuName:String {get };
     var menuImage:String {get };
     var active:Bool {get}

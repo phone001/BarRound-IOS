@@ -9,15 +9,20 @@ import SwiftUI
 
 struct AppView: View {
     @State var _page: AnyView = AnyView(Home());
+
+   
     var body: some View {
-        VStack {
-            Headers()
+        Headers()
+        // 중앙 컨텐츠만 변경
+        NavigationStack{
             ContentView(content :_page)
-            BottomMenu(page:$_page)
         }
+        BottomMenu(page:$_page)
     }
 }
 
 #Preview {
     AppView()
 }
+
+

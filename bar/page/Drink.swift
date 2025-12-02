@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct Drink:View{
+    @State private var isDetail:Bool = false
+    
     var body:some View{
         VStack{
-            ProductList(productLsit: getDrinkList())
+            ProductList(productList: getDrinkList())
         }
     }
 }

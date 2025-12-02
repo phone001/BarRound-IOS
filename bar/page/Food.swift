@@ -11,7 +11,7 @@ struct Food:View{
     let foodList :[any ProductProps] = getFoodList();
     var body:some View{
         VStack{
-            ProductList(productLsit: foodList)
+//            ProductList(productLsit: foodList)
         }
     }
 }
