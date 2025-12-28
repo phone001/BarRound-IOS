@@ -8,6 +8,6 @@ import SwiftUI
 
 struct Order:View{
     var body:some View{
-        Text("Order")
+        OrderList(orderListArr:getOrderList())
     }
 }

@@ -15,3 +15,15 @@ func getFoodList()->[any ProductProps]{
     ];
     return foodList;
 }
+
+func getOrderList()->[[OrderClass]]{
+    let orderList: [[OrderClass]] = [
+        [OrderClass(_menuName: "칵테일", quantity: 2, price: 1000),
+        OrderClass(_menuName: "맥주", quantity: 3, price: 10000),
+        OrderClass(_menuName: "보드카", quantity: 1, price: 5000),]
+        ,[OrderClass(_menuName: "칵테일", quantity: 2, price: 1000),
+            OrderClass(_menuName: "맥주", quantity: 3, price: 10000),
+            OrderClass(_menuName: "보드카", quantity: 1, price: 5000)]
+    ];
+    return orderList;
+}
